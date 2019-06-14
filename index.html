@@ -57,6 +57,7 @@
 	    <!-- <link href="css/tomato-theme.css" rel="stylesheet">     -->
 		<!-- RESPONSIVE CSS -->
 		<link href="website/css/responsive.css" rel="stylesheet"> 
+		<link href="website/css/style.css" rel="stylesheet"> 
 		<script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
 	    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -231,7 +232,7 @@
 						<!-- IMAGE BLOCK -->
 						<div class="col-md-6">
 							<div class="img-block wow fadeInUp" data-wow-delay="0.6s">
-								<img class="img-fluid" src="website/images/features.png" alt="content-image">
+								<img class="img-fluid img-shadow" src="website/images/features.png" alt="content-image">
 							</div>
 						</div>
 						<!-- TEXT BLOCK -->	
@@ -354,7 +355,7 @@
 								<img class="img-70" src="website/images/icons/laptop.png" alt="service-icon" />
 								<div class="sbox-4-txt">
 									<h5 class="h5-sm">Beginner to Advanced</h5>
-									<p class="grey-color">Courses cover all features and modules</p>
+									<p class="grey-color">The course includes all the features and modules found at PertafloSIM.</p>
 								</div>
 							</div>							
 						</div>
@@ -381,7 +382,7 @@
 								<img class="img-70" src="website/images/icons/vector.png" alt="service-icon" />
 								<div class="sbox-4-txt">
 									<h5 class="h5-sm">Hands-on</h5>
-									<p class="grey-color">Intensive, industry focues training</p>
+									<p class="grey-color">Intensive, industry focus training</p>
 								</div>
 							</div>							
 						</div>	
@@ -438,41 +439,8 @@
 							<h3 class="h3-md">Contact Us</h3>
 							<p class="p-md">Touch us if you have any questions or commnents</p>
 						</div>
-
-			        	<!-- CONTACTS INFO -->
-				 		<div class="col-md-4">
-
-					 		<!-- LOCATION -->
-							<div class="contact-box mb-40">
-								<h5 class="h5-sm">Our Location</h5>														
-								<ul>
-									<a href="https://goo.gl/maps/PzJKkJQfUXXRTZnX7" target="_blank">
-										<div style="width: 100%;height: 150px;" id="mapContainer"></div>
-									</a>
-									<li><p class="grey-color">Upstream Research & Technology - Research & Technology Center<br>Gedung Sopo Del Lantai 50 Jl. Mega Kuningan Barat III, RT.4/RW.5, Kuningan, <br>Kuningan Timur, Setia Budi, Jakarta Selatan, 12950</li>
-								</ul>
-							</div>
-
-							<!-- PHONES -->
-							<div class="contact-box mb-40">
-								<h5 class="h5-sm">Support</h5>	
-								<p class="grey-color">Available 24 hours</p>
-							</div>
-
-							<!-- PHONES -->
-							<div class="contact-box mb-40">
-								<h5 class="h5-sm">Contact</h5>
-								<p class="grey-color foo-email">Email : <a href="mailto:yourdomain@mail.com">pertaflosim@gmail.com</a></p>
-								<p class="grey-color">Fahmy : +62 85856737037</p>
-								<p class="grey-color">Andre : +62 81346680863</p>
-								<p class="grey-color">Erma  : +62 87705342542</p>
-							</div>
-
-						</div>	<!-- END CONTACTS INFO -->
-
-
-			        	<!-- CONTACT FORM -->
-			            <div class="col-md-8">
+						<!-- CONTACT FORM -->
+			            <div class="col-md-6">
 				            <div class="form-holder">
 				                <form name="contactform" class="row contact-form">
 				                    
@@ -494,8 +462,8 @@
 					                </div> 
 					                                            
 					                <!-- Contact Form Button -->
-					                <div class="col-lg-12 mt-15 form-btn text-right1">  
-					                	<button type="submit" class="btn btn-primary-color black-hover submit">Send Your Message</button> 
+					                <div class="col-lg-12 form-btn text-right1" >  
+					                	<button type="submit" class="btn btn-primary-color black-hover submit btn-block" style="margin-bottom:15px;">Send Your Message</button> 
 					                </div>
 					                                                              
 					                <!-- Contact Form Message -->
@@ -506,8 +474,36 @@
 				                </form> 
 				            </div>  
 			            </div>  <!-- END CONTACT FORM -->
+			        	<!-- CONTACTS INFO -->
+				 		<div class="col-md-6">
+					 		<!-- LOCATION -->
+							<div class="contact-box mb-40">
+								<!-- <h5 class="h5-sm">Our Location</h5>		 -->												
+								<ul>
+									<a href="https://goo.gl/maps/PzJKkJQfUXXRTZnX7" target="_blank">
+										<div style="width: 100%;height: 320px;margin-bottom:32px;" id="mapContainer"></div>
+									</a>
+									<!-- <li><p class="grey-color"><b>Upstream Research & Technology - Research & Technology Center</b><br>Gedung Sopo Del 50th Floor Jl. Mega Kuningan Barat III, RT.4/RW.5, Kuningan, <br>Kuningan Timur, Setia Budi, Jakarta Selatan, 12950</li> -->
+									<h5 style="margin-top: 10px;text-align: right;">Upstream Research & Technology - Research & Technology Center</h5>
+									<p class="grey-color normal" style="text-align: right;">Gedung Sopo Del 50th Floor Jl. Mega Kuningan Barat III, RT.4/RW.5, <br>Kuningan, Kuningan Timur, Setia Budi, Jakarta Selatan, 12950</p>
+								</ul>
+							</div>
 
+							<!-- PHONES -->
+							<!-- <div class="contact-box mb-40">
+								<h5 class="h5-sm">Support</h5>	
+								<p class="grey-color">Working hours = 07.00 AM - 04.00 PM</p>
+							</div> -->
 
+							<!-- PHONES -->
+							<!-- <div class="contact-box mb-40">
+								<h5 class="h5-sm">Contact</h5>
+								<p class="grey-color foo-email">Email : <a href="mailto:yourdomain@mail.com">pertaflosim@gmail.com</a></p>
+								<p class="grey-color">1st Support : +62 85856737037</p>
+								<p class="grey-color">2nd Support : +62 81346680863</p>
+								<p class="grey-color">3rd Support : +62 87705342542</p>
+							</div> -->
+						</div>	<!-- END CONTACTS INFO -->
 
 			        </div>    <!-- End row -->    
 		        </div>     <!-- End container -->   
@@ -524,20 +520,19 @@
 
 
 						<!-- FOOTER INFO -->
-						<div class="col-md-10 col-lg-4">
+						<div class="col-md-4 col-lg-4">
 							<div class="footer-info mb-40">
-
 								<!-- Footer Logo -->
 								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 350 x 70  pixels) -->
-								<img src="website/images/Logo Pertaflosim_panjang-1.svg" width="195" alt="footer-logo">
-
-								<!-- Email -->
-								<p class="foo-email">E: <a href="mailto:yourdomain@mail.com">pertaflosim@gmail.com</a></p>
-
-								<!-- Phone -->
-								<p>Fahmy : +62 85856737037</p>
-								<p>Andre : +62 81346680863</p>
-								<p>Erma  : +62 87705342542</p>
+								<img src="website/images/Logo Pertaflosim_panjang-1.svg" width="240" alt="footer-logo">
+								<p class="foo-email">E: <a href="mailto:pertaflosim@gmail.com">pertaflosim@gmail.com</a></p>
+								<p>1st Support : +62 85856737037</p>
+								<p>2nd Support : +62 81346680863</p>
+								<p>3rd Support : +62 87705342542</p>
+								<h5 style="margin-top: 16px;">Support</h5>
+								<p>Working hours = 07.00 AM - 04.00 PM</p>
+								<!-- <img src="website/images/PERTAMINA.svg" width="240" alt="footer-pertamina-logo" style="margin-bottom: 15px;">
+								<img src="website/images/Logo-RTC.svg" width="200" alt="footer-pertaflosim-logo"> -->
 
 								<!-- Social Icons -->
 								<!--<div class="footer-socials-links mt-20">
@@ -560,10 +555,22 @@
 								-->	
 							</div>	
 						</div>	<!-- END FOOTER INFO -->		
-
+						<div class="col-md-2 col-lg-2 offset-lg-3">
+							<div class="footer-links mb-40">
+								<h5 class="h5-sm">Products</h5>
+								<ul class="clearfix">
+									<li><a href="#hero-6">Profile Video</a></li>
+									<li><a href="#advantages">Advantages</a></li>
+									<li><a href="#features">Features</a></li>
+									<li><a href="#history">History</a></li>
+									<li><a href="#training">Training</a></li>
+									<li><a href="#contacts">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
 
 						<!-- FOOTER NEWSLETTER FORM -->
-						<div class="col-md-6 col-lg-3 offset-lg-5">
+						<div class="col-md-3 col-lg-3 ">
 							<div class="footer-form mb-20">
 
 								<!-- Title -->
@@ -585,14 +592,18 @@
 									</div>
 
 									<!-- Newsletter Form Notification -->		
-									<label for="s-email" class="form-notification"></label>
-												
+									<label for="s-email" class="form-notification"></label>		
 								</form>
-														
+								<div class="row">
+									<div class="col-6">
+										<img src="website/images/Logo-RTC.svg" height="42"  alt="footer-pertaflosim-logo">		
+									</div>
+									<div class="col-6">
+										<img src="website/images/PERTAMINA.svg" height="30" alt="footer-pertamina-logo" style="margin-top: 5px;">	
+									</div>
+								</div>
 							</div>
 						</div>	<!-- END FOOTER NEWSLETTER FORM -->
-
-
 					</div>	  <!-- END FOOTER CONTENT -->
 
 

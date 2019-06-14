@@ -1,0 +1,15 @@
+.footer-info {
+    margin-top: 0;
+}
+
+.contact-box p.normal {
+    color: #000; 
+    font-size: 16px; 
+    font-weight: 200; 
+    margin-bottom: 0;
+}
+#mapContainer, .img-shadow{
+	-webkit-box-shadow: 0px 10px 20px -1px rgba(0,0,0,0.43);
+-moz-box-shadow: 0px 10px 20px -1px rgba(0,0,0,0.43);
+box-shadow: 0px 10px 20px -1px rgba(0,0,0,0.43);
+}
