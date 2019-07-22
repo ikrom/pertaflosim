@@ -2,6 +2,10 @@
     margin-top: 0;
 }
 
+p.no-margin{
+	margin:0 !important;
+}
+
 .contact-box p.normal {
     color: #000; 
     font-size: 14px; 
@@ -247,6 +251,7 @@ ul.show-style{
   float: left;
   padding: .8em 0;
   opacity: .7;
+  font-size: 14px;
 }
 .cd-timeline-content::before {
   content: '';
