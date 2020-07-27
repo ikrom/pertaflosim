@@ -35,9 +35,9 @@ router.post('/', function (req, res,next) {
     text : req.body.message
   };
 
-	transporter.sendMail(mailOptions, (error, info) => {
-   	if (error) {
-      return res.status.json({ err: err });
+	transporter.sendMail(mailOptions, (err, info) => {
+   	if (err) {
+      return res.json({ err: err });
      	// return console.log(error);
    	}
    	// console.log('Message %s sent: %s', info.messageId, info.response);
