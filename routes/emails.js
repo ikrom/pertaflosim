@@ -24,15 +24,16 @@ router.post('/', function (req, res,next) {
     }
   }));
 
-  let subject = req.body.name +"_"+ req.body.email +"_"+ req.body.company
-  console.log(subject)
+  let subject = "Ask_Pertaflosim_"+req.body.name +" ("+ req.body.email +")_"+ req.body.company
+  let content = `Nama: ${req.body.name}<br>Email: ${req.body.email}<br>Perusahaan: ${req.body.company}<br><br>${req.body.message}
+  `
   let mailOptions = {
     // should be replaced with real recipient's account
     from: 'pertaflosim@gmail.com',
   	to: 'pertaflosim@gmail.com',
    	subject: subject,
    	// body: req.body.message
-    text : req.body.message
+    html : content
   };
 
 	transporter.sendMail(mailOptions, (err, info) => {
